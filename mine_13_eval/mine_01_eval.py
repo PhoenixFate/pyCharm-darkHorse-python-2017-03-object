@@ -1,0 +1,6 @@
+print(eval("1+ 1"))
+print(eval("'-'*10"))
+num_list = eval("[1,2,3,4,5]")
+print(num_list)
+temp_dict=eval("{'name':'tom','age':18}")
+print(temp_dict)
