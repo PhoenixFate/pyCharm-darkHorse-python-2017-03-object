@@ -26,7 +26,5 @@ lazy_cat.eat()
 lazy_cat.drink()
 print(lazy_cat)
 
-lazy_cat2=lazy_cat
+lazy_cat2 = lazy_cat
 print(lazy_cat2)
-
-

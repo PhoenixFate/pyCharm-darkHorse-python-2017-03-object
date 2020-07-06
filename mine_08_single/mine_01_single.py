@@ -13,13 +13,9 @@ class MusicPlayer(object):
         print(args)
         print(kwargs)
         # 1.创建对象时，new方法会被自动调用
-
         # 2.为对象分配空间
-
         # 3.返回对象的引用
-
         print("MusicPlayer new")
-
         if cls.instance is None:
             # object.__new__
             cls.instance = super().__new__(cls)
@@ -38,9 +34,17 @@ class MusicPlayer(object):
     def test(cls):
         print("test")
 
+    def __test2__(self):
+        print("test2")
+
+    # def __test3(self):
+    #     print("test3")
+
 
 player1 = MusicPlayer()
 player2 = MusicPlayer()
 print(player1)
 print(player2)
 MusicPlayer.test()
+player1.__test2__()
+# player1.__test3()

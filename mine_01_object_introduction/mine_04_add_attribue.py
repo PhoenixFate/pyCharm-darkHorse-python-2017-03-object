@@ -1,5 +1,9 @@
 class Cat:
 
+    def __init__(self):
+        self.name = None
+
+    # 普通方法（实例方法）
     def eat(self):
         # 哪一个对象调用的方法，self就是哪一个对象的引用
         print("%s猫吃鱼" % self.name)

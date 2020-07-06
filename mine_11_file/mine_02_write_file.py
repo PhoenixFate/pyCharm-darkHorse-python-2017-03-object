@@ -14,7 +14,7 @@
 file = open("README.md", "a+")
 
 # 2.写入文件
-file.write("python write")
+file.write("python write\n")
 file.write("hello")
 
 # 3.关闭文件

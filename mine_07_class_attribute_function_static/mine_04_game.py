@@ -1,3 +1,6 @@
+import random
+
+
 class Game(object):
     top_score = 0
 
@@ -14,7 +17,11 @@ class Game(object):
         print("top score: %.2f" % cls.top_score)
 
     def start_game(self):
-        print("%s 开始游戏" % self.name)
+        score = random.randint(100, 500)
+        print("%s 开始游戏; 游戏得分: %d" % (self.name, score))
+        # 使用类名.修改历史最高分
+        if score > Game.top_score:
+            Game.top_score = score
 
 
 Game.show_help()
@@ -25,3 +32,4 @@ player2 = Game("小李")
 
 player1.start_game()
 player2.start_game()
+Game.show_top_score()

@@ -21,6 +21,9 @@ class Dog(Animal):
     def bark(self):
         print("汪汪汪")
 
+    def eat(self):
+        print("dog eat")
+
 
 animal = Animal()
 animal.eat()

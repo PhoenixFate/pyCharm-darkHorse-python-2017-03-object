@@ -10,14 +10,16 @@ class Tool(object):
     @classmethod
     def show_tool_count(cls):
         # 在类方法内部 可以使用cls 访问类属性或者类方法
-        cls.test()
+        # cls.test()
         print("工具类 创建的对象 数量：%d" % cls.count)
 
     @classmethod
     def test(cls):
         print("类方法测试")
+        print(cls)
 
 
 tool1 = Tool("榔头")
 
 Tool.show_tool_count()
+Tool.test()

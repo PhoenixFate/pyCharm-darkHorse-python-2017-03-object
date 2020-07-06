@@ -13,3 +13,6 @@ class Dog3(object):
 # 调用静态方法：
 # 类名.静态方法
 Dog3.run()
+dog = Dog3()
+# 实例.静态方法(不推荐)
+dog.run()

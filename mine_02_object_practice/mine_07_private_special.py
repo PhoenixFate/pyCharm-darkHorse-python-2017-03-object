@@ -4,7 +4,7 @@ class Woman:
         self.name = name
         # 属性 方法 前面加__ 代表私有
         self.__age = 19
-        print("%s ; %d" % (self.name, self.__age ))
+        print("%s ; %d" % (self.name, self.__age))
 
     def __secret(self):
         # 在对象的方法内部，能够正常访问私有属性

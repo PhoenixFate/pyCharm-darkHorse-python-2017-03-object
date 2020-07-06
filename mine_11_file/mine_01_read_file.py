@@ -12,6 +12,7 @@ text = file.read()
 print(text)
 print(len(text))
 
+# 第二次读的时候已经读到文件末尾了，所以没有数据返回
 text = file.read()
 print(text)
 print(len(text))

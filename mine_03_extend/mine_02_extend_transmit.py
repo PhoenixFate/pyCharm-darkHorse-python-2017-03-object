@@ -1,4 +1,9 @@
-class Animal2:
+# 一个类默认是继承object类的，
+# 在python2中 需要强制写(object)
+# 在python3中 可以不写(object)
+
+
+class Animal2(object):
 
     def __init__(self):
         pass
@@ -20,6 +25,7 @@ class Dog2(Animal2):
 
     def bark(self):
         print("汪汪汪")
+
 
 # 继承的特效：传递性
 class XiaoTianQuan(Dog2):

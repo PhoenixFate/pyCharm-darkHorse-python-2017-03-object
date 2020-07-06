@@ -1,5 +1,5 @@
 # mro: method resolution order 方法解决顺序
-class A2:
+class A2(object):
     def __init__(self):
         self.name = "A name"
 
@@ -10,7 +10,7 @@ class A2:
         print("A demo")
 
 
-class B2:
+class B2(object):
     def __init__(self):
         self.name = "B name"
 

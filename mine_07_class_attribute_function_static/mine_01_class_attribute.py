@@ -24,3 +24,4 @@ print(tool1.count)
 # 注意：使用对象.属性名=值 赋值语句，只会给对象添加一个属性，而不会影响到 类属性到值
 tool1.count = 99
 print(tool1.count)
+print(Tool.count)

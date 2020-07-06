@@ -1,5 +1,6 @@
 def say_hello():
     print("hello")
+    return __name__
 
 
 # 如果直接执行模块，__name__就是固定值 __main__

@@ -1,6 +1,9 @@
+import string
+
+
 class HouseItem:
 
-    def __init__(self, name, area):
+    def __init__(self, name: string, area: float):
         self.name = name
         self.area = area
 
@@ -10,7 +13,7 @@ class HouseItem:
 
 class House:
 
-    def __init__(self, house_type, area):
+    def __init__(self, house_type: string, area: float):
         # 户型
         self.house_type = house_type
         # 房子面积
@@ -20,7 +23,7 @@ class House:
         # 家具列表
         self.item_list = []
 
-    def add_item(self, item):
+    def add_item(self, item: HouseItem):
         # 1.判断家具面积，太大，不能添加
         if item.area > 5 or item.area > self.free_area:
             print("家具面积太大，放不下")
