@@ -3,3 +3,5 @@ null
 build
 dist
 MANIFEST
+venv
+.DS_STORE
